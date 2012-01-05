@@ -23,11 +23,27 @@
         top: 0;
         left: 0;
       }
+      #overlay_screen {
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        display: none;
+        z-index: 500;
+        width: 100%;
+        height: 100%;
+      }
+      #overlay_screen img {
+        width: 100%;
+        height: 100%;
+      }
     </style>
   </head>
   
   <body>
     <div id="map"></div>
     <div id="pano"></div>
+    <div id="overlay_screen">
+      <img src="images/midnightoxfordcircus.jpg" alt="Midnightoxfordcircus" />
+    </div>
   </body>
 </html>

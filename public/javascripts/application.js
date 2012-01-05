@@ -73,11 +73,15 @@ function Map(args) {
   }
   
   function show_custom_pano(pano) {
-    window.custom_pano_view.show({
-      pano: pano,
-      pov: self.map.streetView.pov,
-      links: self.map.streetView.links
-    });
+    $('#overlay_screen').css('display', 'block');
+    setTimeout(function() {
+      alert('Congratulations, you\'ve found our special loaction, have a cake!');
+    }, 2000);
+    // window.custom_pano_view.show({
+    //   pano: pano,
+    //   pov: self.map.streetView.pov,
+    //   links: self.map.streetView.links
+    // });
   }
   
   function move_to_pano(args) {
